@@ -7,7 +7,7 @@ import Nav from "./Nav";
 
 Router.onRouteChangeStart = () => NProgress.start();
 
-Router.RouterChangeComplete = () => NProgress.done();
+Router.onRouteChangeComplete = () => NProgress.done();
 
 Router.onRouteChangeError = () => NProgress.done();
 
